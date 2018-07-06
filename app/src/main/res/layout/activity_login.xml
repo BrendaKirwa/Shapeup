@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gym"
+    tools:context="com.example.hpenvy15.shapeup.login">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="85dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/lobster"
+        android:foregroundGravity="center_horizontal"
+        android:text="@string/shapeup"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/yellow"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editTextPassword"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/bottom_line"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="274dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/editTextEmail"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bottom_line"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/forgot_link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/rounder_button"
+        android:onClick="onClick"
+        android:text="@string/log_In"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/forgot_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/link_signup"
+        android:layout_alignEnd="@+id/link_signup"
+        android:layout_marginBottom="18dp"
+        android:onClick="resetActivityStart"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/link_signup"
+        android:layout_width="233dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="signupactivitystart"
+        android:text="@string/don_t_have_an_account_create_one"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

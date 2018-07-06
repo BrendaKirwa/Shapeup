@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.thigh"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/crunchbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="101dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/arrow"
+        android:onClick="crunchstart"
+        android:text="@string/crunches"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/plankbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plankbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="67dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/arrow"
+        android:onClick="plankstart"
+        android:text="@string/planks"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/squatbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crunchbtn" />
+
+    <Button
+        android:id="@+id/squatbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="167dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/arrow"
+        android:onClick="squatstart"
+        android:text="@string/squats"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plankbtn" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.running">
+
+    <ImageView
+        android:id="@+id/running"
+        android:layout_width="0dp"
+        android:layout_height="236dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/runreps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/running" />
+
+    <EditText
+        android:id="@+id/runsets"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/sets_running"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/runreps"
+        app:layout_constraintEnd_toStartOf="@+id/runreps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/runreps" />
+
+    <EditText
+        android:id="@+id/runreps"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="Reps"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/runsets"
+        app:layout_constraintTop_toBottomOf="@+id/running" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="16dp"
+        android:onClick="onClick"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/runinfo"
+        app:layout_constraintEnd_toEndOf="@+id/runsets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/runreps" />
+
+    <TextView
+        android:id="@+id/runinfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/running_is_an_exercise_that_helps_build_strong_bones_as_it_is_a_weight_bearing_exercise"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.MainActivity"
+    android:background="@drawable/gym">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="85dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/lobster"
+        android:foregroundGravity="center_horizontal"
+        android:text="@string/shapeup"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/yellow"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/RegisterBtn"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="244dp"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="203dp"
+        android:background="@drawable/rounder_button"
+        android:onClick="SignInActivityStart"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="244dp"
+        android:layout_height="58dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/RegisterBtn"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/rounder_button"
+        android:onClick="LoginActivityStart"
+        android:text="@string/log_In"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white" />
+
+
+
+</RelativeLayout>
+
+
+

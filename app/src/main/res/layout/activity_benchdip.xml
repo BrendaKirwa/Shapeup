@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.benchdip"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <EditText
+        android:id="@+id/benchset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/sets_bench"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/benchrep"
+        app:layout_constraintEnd_toStartOf="@+id/benchrep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/benchrep" />
+
+    <EditText
+        android:id="@+id/benchrep"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:hint="@string/reps_bench"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/benchset"
+        app:layout_constraintTop_toBottomOf="@+id/benchimage" />
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="12dp"
+        android:onClick="onClick"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/benchinfo"
+        app:layout_constraintEnd_toEndOf="@+id/benchset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/benchrep" />
+
+    <TextView
+        android:id="@+id/benchinfo"
+        android:layout_width="0dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:text="@string/a_good_way_to_work_on_your_triceps_and_biceps_place_yor_hands_onto_the_edge_of_your_bench_one_hand_on_each_side_of_your_hips_use_your_arms_to_push_your_butt_up_and_off_the_bench_firmly_grip_the_edge_of_the_bench_as_you_straighten_your_arms_and_extend_your_legs_foward_so_that_your_knees_are_no_longer_bent_your_butt_should_be_infront_of_the_bench"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <ImageView
+        android:id="@+id/benchimage"
+        android:layout_width="384dp"
+        android:layout_height="146dp"
+        android:layout_marginBottom="42dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/benchrep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bench"
+        tools:ignore="ContentDescription" />
+</android.support.constraint.ConstraintLayout>

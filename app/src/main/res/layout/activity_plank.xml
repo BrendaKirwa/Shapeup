@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.plank"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/planksets"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/sets_plank"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/plankreps"
+        app:layout_constraintEnd_toStartOf="@+id/plankreps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/plankreps" />
+
+    <EditText
+        android:id="@+id/plankreps"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="@string/reps_plank"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/planksets"
+        app:layout_constraintTop_toBottomOf="@+id/plankimage" />
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="13dp"
+        android:onClick="onClick"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/plankinfo"
+        app:layout_constraintEnd_toEndOf="@+id/planksets"
+        app:layout_constraintStart_toStartOf="@+id/plankinfo"
+        app:layout_constraintTop_toBottomOf="@+id/plankreps" />
+
+    <TextView
+        android:id="@+id/plankinfo"
+        android:layout_width="0dp"
+        android:layout_height="146dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:text="@string/lie_facedown_with_legs_extended_and_elbows_bent_and_directly_under_shoulders_clasp_your_hands_feet_should_be_hip_width_apart_and_elbows_should_be_shoulder_width_apart_contract_your_abs_then_tuck_your_toes_to_lift_your_body_forearms_remain_on_the_ground_you_should_be_in_a_straight_line_from_head_to_heels_hold_for_60_seconds_or_as_long_as_you_can"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <ImageView
+        android:id="@+id/plankimage"
+        android:layout_width="0dp"
+        android:layout_height="179dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/plankreps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/planks"
+        tools:ignore="ContentDescription" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.signup"
+    android:background="@drawable/gym">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="85dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/lobster"
+        android:foregroundGravity="center_horizontal"
+        android:text="@string/shapeup"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/yellow"
+        android:textSize="50sp" />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/loadert"
+        android:layout_alignStart="@+id/userEmail"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/bottom_line"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/loadert"
+        android:layout_alignStart="@+id/userPassword"
+        android:background="@drawable/bottom_line"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/RegisterBtn"
+        android:layout_below="@+id/loadert"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/bottom_line"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/RegisterBtn"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/rounder_button"
+        android:onClick="onClick"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/loadert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+
+
+
+</RelativeLayout>
+
+

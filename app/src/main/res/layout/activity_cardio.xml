@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.cardio"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/bikingbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/arrow"
+        android:onClick="startbikingactivity"
+        android:text="@string/biking"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/runbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aerobicsbtn" />
+
+    <Button
+        android:id="@+id/runbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/arrow"
+        android:onClick="startrunactivity"
+        android:text="@string/running"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/ropebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bikingbtn" />
+
+    <Button
+        android:id="@+id/ropebtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/arrow"
+        android:onClick="startropeactivity"
+        android:text="@string/skipping_rope"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/runbtn" />
+
+    <Button
+        android:id="@+id/aerobicsbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="86dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/arrow"
+        android:onClick="startaerobicactivity"
+        android:text="@string/aerobics"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/bikingbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

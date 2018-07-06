@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.squats"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/squatsets"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/sets_squat"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/squatreps"
+        app:layout_constraintEnd_toStartOf="@+id/squatreps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/squatreps" />
+
+    <EditText
+        android:id="@+id/squatreps"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="@string/reps_squat"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/squatsets"
+        app:layout_constraintTop_toBottomOf="@+id/squatimage" />
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="13dp"
+        android:onClick="onClick"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/plankinfo"
+        app:layout_constraintEnd_toEndOf="@+id/squatsets"
+        app:layout_constraintStart_toStartOf="@+id/plankinfo"
+        app:layout_constraintTop_toBottomOf="@+id/squatreps" />
+
+    <TextView
+        android:id="@+id/plankinfo"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:text="@string/start_in_a_standing_position_feet_shoulder_width_apart_and_hands_clasped_in_front_of_chest_elbows_slightly_bent_brace_your_abs_push_your_hips_back_and_bend_your_knees_lowering_the_body_into_a_squat_pause_at_the_bottom_then_push_back_up_to_the_starting_position"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <ImageView
+        android:id="@+id/squatimage"
+        android:layout_width="0dp"
+        android:layout_height="186dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/squatreps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/squats" />
+
+</android.support.constraint.ConstraintLayout>

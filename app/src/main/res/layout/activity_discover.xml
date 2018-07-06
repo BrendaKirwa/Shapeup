@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gym"
+    tools:context="com.example.hpenvy15.shapeup.discover"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/workoutbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/instructorbtn"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/black"
+        android:onClick="workoutstart"
+        android:text="@string/work_out_session"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/instructorbtn"
+        app:layout_constraintEnd_toStartOf="@+id/pastworkoutbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+    <Button
+        android:id="@+id/pastworkoutbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignBaseline="@+id/workoutbtn"
+        android:layout_alignBottom="@+id/workoutbtn"
+        android:layout_alignStart="@+id/locationbtn"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="147dp"
+        android:background="@color/black"
+        android:onClick="pastworkoutstart"
+        android:text="@string/past_workouts"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/locationbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/workoutbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/instructorbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/workoutbtn"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/black"
+        android:onClick="instructorstart"
+        android:text="@string/our_instructors"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/locationbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workoutbtn" />
+
+    <Button
+        android:id="@+id/locationbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignBaseline="@+id/instructorbtn"
+        android:layout_alignBottom="@+id/instructorbtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/black"
+        android:onClick="locationstart"
+        android:text="@string/our_location"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/instructorbtn"
+        app:layout_constraintTop_toBottomOf="@+id/pastworkoutbtn" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="62dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="57dp"
+        android:onClick="profileactivitystart"
+        app:layout_constraintBottom_toTopOf="@+id/workoutbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/prof" />
+</android.support.constraint.ConstraintLayout>
+
+
+

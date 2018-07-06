@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.workout"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="313dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:drawableEnd="@android:drawable/ic_input_add"
+        android:onClick="addactivitystarts"
+        android:text="@string/addworkouts"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardiotxt"
+        app:layout_constraintEnd_toEndOf="@+id/cardiotxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/arm"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="127dp"
+        android:onClick="armactivitystarts"
+        android:contentDescription="@string/triceps_and_biceps"
+        app:layout_constraintBottom_toBottomOf="@+id/legtxt"
+        app:layout_constraintEnd_toStartOf="@+id/armtxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardio"
+        app:srcCompat="@drawable/armwk" />
+
+    <ImageButton
+        android:id="@+id/cardio"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="116dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="115dp"
+        android:contentDescription="@string/cardio"
+        android:onClick="cardioactivitystarts"
+        app:layout_constraintBottom_toBottomOf="@+id/armtxt"
+        app:layout_constraintEnd_toStartOf="@+id/cardiotxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardio" />
+
+    <ImageButton
+        android:id="@+id/leg"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="61dp"
+        android:contentDescription="@string/thigh_bums_and_tummy"
+        android:onClick="legactivitystarts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/legtxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arm"
+        app:srcCompat="@drawable/legwork" />
+
+    <TextView
+        android:id="@+id/cardiotxt"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cardio"
+        android:textColor="@color/black"
+        android:onClick="cardioactivitystarts"
+        app:layout_constraintBottom_toTopOf="@+id/armtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardio"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/armtxt"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="91dp"
+        android:layout_marginEnd="63dp"
+        android:text="@string/triceps_and_biceps"
+        android:textColor="@color/black"
+        android:onClick="armactivitystarts"
+        app:layout_constraintBottom_toTopOf="@+id/legtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arm"
+        app:layout_constraintTop_toBottomOf="@+id/cardiotxt" />
+
+    <TextView
+        android:id="@+id/legtxt"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="63dp"
+        android:text="@string/thigh_bums_and_tummy"
+        android:onClick="legactivitystarts"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leg"
+        app:layout_constraintTop_toBottomOf="@+id/armtxt" />
+
+
+</android.support.constraint.ConstraintLayout>

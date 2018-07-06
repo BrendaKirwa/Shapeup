@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.pushup"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/pushupset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/sets_push"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/pushuprep"
+        app:layout_constraintEnd_toStartOf="@+id/pushuprep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pushuprep" />
+
+    <EditText
+        android:id="@+id/pushuprep"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:hint="@string/reps_push"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pushupset"
+        app:layout_constraintTop_toBottomOf="@+id/pushbtn" />
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="12dp"
+        android:onClick="onClick"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/benchinfo"
+        app:layout_constraintEnd_toEndOf="@+id/pushupset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pushuprep" />
+
+    <TextView
+        android:id="@+id/benchinfo"
+        android:layout_width="0dp"
+        android:layout_height="168dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:text="@string/assume_a_face_down_prone_position_on_the_floor_keep_your_feet_together_your_weight_should_be_on_your_chest_position_hands_palms_down_on_the_floor_approximately_shoulder_width_apart_they_should_be_about_next_to_your_shoulders_with_your_elbows_pointed_towards_your_toes_raise_yourself_using_your_arms_at_this_point_your_weight_should_be_supported_by_your_hands_and_the_balls_of_your_feet_repeat"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <ImageView
+        android:id="@+id/pushbtn"
+        android:layout_width="0dp"
+        android:layout_height="172dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/pushuprep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pushup"
+        tools:ignore="ContentDescription" />
+
+</android.support.constraint.ConstraintLayout>

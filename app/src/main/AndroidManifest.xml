@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hpenvy15.shapeup">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <activity android:name=".signup" />
+        <activity android:name=".discover" />
+        <activity android:name=".profile" />
+        <activity android:name=".workout" />
+        <activity android:name=".pastworkout" />
+        <activity android:name=".instructors" />
+        <activity android:name=".resetpassword" />
+        <activity android:name=".addworkout" />
+        <activity android:name=".cardio" />
+        <activity android:name=".aerobics" />
+        <activity android:name=".biking" />
+        <activity android:name=".running" />
+        <activity android:name=".sskippingrope" />
+        <activity android:name=".triceps" />
+        <activity android:name=".benchdip" />
+        <activity android:name=".pushup" />
+        <activity android:name=".dumbbell" />
+        <activity android:name=".thigh" />
+        <activity android:name=".crunch" />
+        <activity android:name=".plank" />
+        <activity android:name=".squats" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".login"></activity>
+    </application>
+
+</manifest>

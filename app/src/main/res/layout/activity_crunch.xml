@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpenvy15.shapeup.crunch"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <EditText
+        android:id="@+id/crunchsets"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/sets_crunch"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/crunchreps"
+        app:layout_constraintEnd_toStartOf="@+id/crunchreps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/crunchreps" />
+
+    <EditText
+        android:id="@+id/crunchreps"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:hint="@string/reps_crunch"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/crunchsets"
+        app:layout_constraintTop_toBottomOf="@+id/crunchimage" />
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="12dp"
+        android:onClick="onClick"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/crunchinfo"
+        app:layout_constraintEnd_toEndOf="@+id/crunchsets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crunchreps" />
+
+    <TextView
+        android:id="@+id/crunchinfo"
+        android:layout_width="371dp"
+        android:layout_height="195dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:text="@string/lie_on_your_back_bend_your_knees_so_your_feet_are_flat_on_the_floor_place_your_fingertips_behind_your_neck_or_head_lift_your_shoulder_blades_off_of_the_mat_with_a_smooth_controlled_motion_inhale_then_exhale_as_you_engage_your_ab_muscles_and_raise_your_torso_lift_yourself_just_enough_to_raise_your_shoulder_blades_off_of_the_floor_once_your_shoulders_are_raised_pause_and_hold_that_position_for_1_to_2_seconds_lower_yourself_back_down_with_a_slow_steady_motion_inhaling_slowly"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <ImageView
+        android:id="@+id/crunchimage"
+        android:layout_width="0dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/crunchreps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crunch"
+        tools:ignore="ContentDescription" />
+
+</android.support.constraint.ConstraintLayout>
